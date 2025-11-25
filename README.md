@@ -46,9 +46,7 @@ Download and install the latest version of the [Arduino IDE](https://www.arduino
 > **Note:** If asked, select **"Replace the file in the destination"**.
 
 ### 6. Hardware Setup: USB-OTG
-Solder the USB-OTG cable or connector to your ESP32 board.
-* Ensure your data lines (D+ and D-) are connected to the correct GPIO pins defined in your board's pinout.
-* **⚠️ WARNING:** Double-check VBUS (5V) and GND connections before powering on to avoid damaging the board or USB device.
+Solder the USB-OTG jumper on your ESP32 board.
 
 ### 7. Arduino IDE Configuration
 Configure the board settings to ensure proper USB communication.
@@ -62,3 +60,8 @@ Configure the board settings to ensure proper USB communication.
 | **USB DFU On Boot** | `Disabled` |
 | **Upload Mode** | `UART0 / Hardware CDC` |
 | **USB Mode** | `Hardware CDC and JTAG` |
+
+8. Flash the program and run the python GUI application
+
+<img width="1243" height="974" alt="image" src="https://github.com/user-attachments/assets/00ac02eb-1dd8-4f08-a207-63a801fa8325" />
+
