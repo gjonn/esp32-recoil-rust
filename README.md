@@ -44,3 +44,21 @@ Download and install the latest version of the [Arduino IDE](https://www.arduino
 * **Destination:** `Documents\Arduino\libraries\EspUsbHost\src\EspUsbHost.cpp`
 
 > **Note:** If asked, select **"Replace the file in the destination"**.
+
+### 6. Hardware Setup: USB-OTG
+Solder the USB-OTG cable or connector to your ESP32 board.
+* Ensure your data lines (D+ and D-) are connected to the correct GPIO pins defined in your board's pinout.
+* **⚠️ WARNING:** Double-check VBUS (5V) and GND connections before powering on to avoid damaging the board or USB device.
+
+### 7. Arduino IDE Configuration
+Configure the board settings to ensure proper USB communication.
+
+1. Go to **Tools** in the Arduino IDE menu.
+2. Ensure the following settings are applied:
+
+| Setting | Value |
+| :--- | :--- |
+| **USB CDC On Boot** | `Disabled` |
+| **USB DFU On Boot** | `Disabled` |
+| **Upload Mode** | `UART0 / Hardware CDC` |
+| **USB Mode** | `Hardware CDC and JTAG` |
