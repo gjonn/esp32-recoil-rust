@@ -1,0 +1,27 @@
+## 🛠️ Installation Instructions
+
+Follow these steps to set up the development environment. Please adhere to the specific versions listed below to ensure compatibility.
+
+### 1. Install Arduino IDE
+Download and install the latest version of the [Arduino IDE](https://www.arduino.cc/en/software).
+
+### 2. Install ESP32 Board Manager
+1. Open Arduino IDE and go to **File > Preferences**.
+2. In the "Additional Boards Manager URLs" field, add: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+3. Go to **Tools > Board > Boards Manager**.
+4. Search for **esp32** by **Espressif Systems**.
+5. **⚠️ IMPORTANT:** Select **Version 3.0.0** from the dropdown menu and click Install.
+
+### 3. Install EspUsbHost Library
+1. Go to **Sketch > Include Library > Manage Libraries**.
+2. Search for **EspUsbHost**.
+3. Look for the library by **TANAKA**.
+4. **⚠️ IMPORTANT:** Select **Version 1.0.1**. Do not install the latest version if it differs.
+
+### 4. Install ESP32-BLE-Mouse (T-vK Fork)
+*Note: This library must be installed manually from GitHub to use the correct fork.*
+
+1. Download the library ZIP file from the [T-vK GitHub Repository](https://github.com/T-vK/ESP32-BLE-Mouse).
+* Click the green **Code** button > **Download ZIP**.
+2. In Arduino IDE, go to **Sketch > Include Library > Add .ZIP Library...**
+3. Select the `.zip` file you just downloaded.
