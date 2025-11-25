@@ -32,11 +32,14 @@ Download and install the latest version of the [Arduino IDE](https://www.arduino
 1. Navigate to the `library` folder inside this project repository.
 2. Copy the modified files and overwrite the existing files in your Arduino libraries directory (usually located in `Documents\Arduino\libraries`).
 
-**File 1: Patch ESP32-BLE-Mouse**
+**Patch 1: Patch ESP32-BLE-Mouse**
 * **Source:** `repo/library/BleMouse.cpp`
 * **Destination:** `Documents\Arduino\libraries\ESP32_BLE_Mouse\BleMouse.cpp`
 
-**File 2: Patch EspUsbHost**
+* **Source:** `repo/library/BleConnectionStatus.cpp`
+* **Destination:** `Documents\Arduino\libraries\ESP32_BLE_Mouse\BleConnectionStatus.cpp`
+
+**Patch 2: Patch EspUsbHost**
 * **Source:** `repo/library/EspUsbHost.h`
 * **Destination:** `Documents\Arduino\libraries\EspUsbHost\src\EspUsbHost.h`
 
