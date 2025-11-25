@@ -25,3 +25,22 @@ Download and install the latest version of the [Arduino IDE](https://www.arduino
 * Click the green **Code** button > **Download ZIP**.
 2. In Arduino IDE, go to **Sketch > Include Library > Add .ZIP Library...**
 3. Select the `.zip` file you just downloaded.
+
+### 5. Apply Custom Library Patches
+**⚠️ CRITICAL STEP:** You must replace specific library files with the modified versions provided in this repository's `library` folder.
+
+1. Navigate to the `library` folder inside this project repository.
+2. Copy the modified files and overwrite the existing files in your Arduino libraries directory (usually located in `Documents\Arduino\libraries`).
+
+**File 1: Patch ESP32-BLE-Mouse**
+* **Source:** `repo/library/BleMouse.cpp`
+* **Destination:** `Documents\Arduino\libraries\ESP32_BLE_Mouse\BleMouse.cpp`
+
+**File 2: Patch EspUsbHost**
+* **Source:** `repo/library/EspUsbHost.h`
+* **Destination:** `Documents\Arduino\libraries\EspUsbHost\src\EspUsbHost.h`
+
+* **Source:** `repo/library/EspUsbHost.cpp`
+* **Destination:** `Documents\Arduino\libraries\EspUsbHost\src\EspUsbHost.cpp`
+
+> **Note:** If asked, select **"Replace the file in the destination"**.
